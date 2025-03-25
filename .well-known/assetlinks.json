@@ -1,0 +1,10 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.itsgotime.app",
+            "sha256_cert_fingerprints": ["C2:35:57:97:22:7E:A6:FC:3A:03:6E:21:37:54:36:EC:2B:04:0A:52:C9:E8:B2:12:D4:C8:8D:99:92:2D:D7:AF","19:52:07:BA:AC:B1:C8:25:22:90:71:05:72:3B:EE:84:09:90:10:83:3E:E2:E8:F5:23:F4:8E:D2:EB:B1:DD:D6"]
+        }
+    }
+]

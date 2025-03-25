@@ -1,0 +1,535 @@
+/*=========== Default css ==========*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    vertical-align: baseline;
+}
+ol, ul {
+    list-style: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+input, textarea, select, button {
+    outline: none;
+    box-shadow: none;
+}
+a {
+    color: #4CDA93;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a:hover, a:focus {
+    color: #4CDA93;
+    text-decoration: none;
+    outline: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #1F2F40;
+    background-color: #D3DCE4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+::-moz-selection {
+    color: #ffffff;
+    background: #4CDA93;
+}
+::selection {
+    color: #ffffff;
+    background: #4CDA93;
+}
+
+
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #1F2F40;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #43485F;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #1F2F40;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.hero-section {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    min-height: 320px;
+    border-radius: 0 0 10px 10px;
+}
+.logo-box{
+    text-align: center;
+}
+.logo-box a {
+    display: inline-block;
+    padding: 16px 8px;
+    line-height: 0;
+    max-width: 510px;
+}
+
+.trip-info-box {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.trip-info-box .trip-location p {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.trip-info-box .trip-location img {
+    margin-right: 10px;
+}
+
+.trip-due-date {
+    background: #FFDFDF;
+    padding: 10px 20px;
+    color: #D94646;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    flex: 0 0 auto;
+}
+
+.white-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.trip-information {
+    padding: 60px 0;
+}
+
+.trip-information .trip-box {
+    margin-bottom: 30px;
+}
+
+.vote-main-box {
+    position: relative;
+    margin-top: 30px;
+}
+
+.vote-main-box .checkbox-with-user {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.vote-main-box .checkbox-with-user .user-count {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.vote-main-box .checkbox-with-user .user-count img:not(:first-child) {
+    margin-left: -13px;
+}
+
+.vote-main-box .checkbox-with-user .user-count span {
+    margin-left: 10px;
+    color: #6686A8;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    color: #1F2F40;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #ffffff;
+    border: 2px solid #D3DCE4;
+    border-radius: 100px;
+}
+
+.custom-checkbox input:checked~.checkmark {
+    background-color: #ffffff;
+    border-color: #2AB26E;
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    width: 12px;
+    height: 12px;
+    background-color: #2AB26E;
+    border-radius: 100px;
+    left: 3px;
+    top: 3px;
+}
+
+.vote-progress {
+    margin-top: 15px;
+    margin-left: 30px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #D3DCE4;
+}
+
+.vote-progress .green-bg {
+    background-color: #2AB26E;
+    border-radius: 100px;
+}
+
+.vote-progress .yellow-bg {
+    background-color: #EABF26;
+    border-radius: 100px;
+}
+
+.vote-progress .red-bg {
+    background-color: #D94242;
+    border-radius: 100px;
+}
+
+.vote-progress .progress-bar span {
+    color: #4C5E72;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+.invitees .vip-box h4 {
+    color: #1F2F40;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 6px;
+}
+
+.invitees .vip-top-box {
+    border-bottom: 1px solid #D3DCE4;
+    padding-bottom: 24px;
+}
+
+.invitees .vip-box .red-bg {
+    border-radius: 50px;
+    background: #CC0E36;
+    width: 100%;
+    height: 12px;
+}
+
+.invitees .vip-box .green-bg {
+    border-radius: 50px;
+    background: #2AB26E;
+    width: 100%;
+    height: 12px;
+}
+
+.guest-box {
+    border-radius: 5px;
+    margin-top: 24px;
+}
+
+.guest-box .titile-with-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.guest-box .titile-with-status h5 {
+    color: #1F2F40;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.guest-box .titile-with-status span {
+    border-radius: 6px;
+    padding: 2px 12px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.guest-box .titile-with-status span.accepted-bg {
+    background-color: #2AB26E;
+}
+
+.guest-box .titile-with-status span.pending-bg {
+    background-color: #F0C11A;
+}
+
+.guest-box .titile-with-status span.declined-bg {
+    background-color: #EC5541;
+}
+
+.guest-box.accepted {
+    border: 1px solid #D9EAE2;
+    background: #F3FEF9;
+}
+
+.guest-box.pending {
+    border: 1px solid #E8E0C6;
+    background: #FFFCF1;
+}
+
+.guest-box.declined {
+    border: 1px solid #F4DDD9;
+    background: #FBF0EE;
+}
+
+.guest-box.accepted .titile-with-status {
+    border-bottom: 1px solid #D9EAE2;
+}
+
+.guest-box.pending .titile-with-status {
+    border-bottom: 1px solid #E8E0C6;
+}
+
+.guest-box.declined .titile-with-status {
+    border-bottom: 1px solid #F4DDD9;
+}
+
+.guest-box .guest-info {
+    padding: 20px 15px;
+}
+
+.guest-box .guest-info .info-box {
+    color: #1F2F40;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.guest-box .guest-info .info-box:last-child {
+    margin-bottom: 0;
+}
+
+.guest-box .guest-info .info-box span {
+    font-weight: 600;
+}
+
+.app-download .app-icon {
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.app-download .app-icon img {
+    width: 160px;
+}
+
+.advertisement img {
+    border-radius: 10px;
+}
+
+.submit-btn {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.submit-btn .btn-green {
+    border-radius: 100px;
+    background: linear-gradient(230deg, #2AB26E 0.15%, #4CDA93 68.07%);
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    color: #ffffff;
+    width: 100%;
+    max-width: 390px;
+}
+
+.submit-btn .btn-red {
+    border-radius: 100px;
+    background: linear-gradient(230deg, #CC0E36 0.15%, #bf6377 68.07%);
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    color: #ffffff;
+    width: 100%;
+    max-width: 390px;
+}
+
+.submit-btn button:hover {
+    opacity: 0.8;
+}
+
+.user-list-modal .user-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.user-list-modal .user-list:last-child{
+    margin-bottom: 0;
+}
+.user-list-modal .user-list .user-img{
+    margin-right: 15px;
+    flex: 0 0 auto;
+    line-height: 0;
+}
+.user-list-modal .user-list .user-img img{
+    width: 47px;
+    height: 67px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.user-list-modal .user-list .user-info h6{
+    color: #1F2F40;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+.user-list-modal .user-list .user-info span{
+    color: #9095AE;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+/*=============================== Responsive Start ===============================*/
+@media only screen and (max-width: 991.98px) {
+    .trip-info-box{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .trip-due-date{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 767.98px) {
+    h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    h3{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .trip-info-box .trip-location p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .trip-due-date{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .trip-information{
+        padding: 40px 0;
+    }
+    .white-box{
+        padding: 20px;
+    }
+    .vote-main-box{
+        margin-top: 20px;
+    }
+    .vote-progress{
+        height: 15px;
+    }
+    .vote-progress .progress-bar span{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .submit-btn{
+        margin-top: 40px;
+    }
+}
+/*=============================== Responsive Start ===============================*/
